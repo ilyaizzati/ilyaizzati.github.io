@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="oyster.png"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/eaad837f79.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="zatilogo.png" class="logo"  style = "width:70px;height:70px;">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Development Student</p>
+                    <h1>Hi! I'm <span> Nor Ilya Izzati </span><br> Binti Mohd Nazri</h1>
+                </div>
+            </div>
+        </div>
+        <!-- -------- about ---------- -->
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="Izzati1.png">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">About Me</h1><br>
+                            <p>I was born and raised at Gong Badak, Kuala Terengganu. 
+                               Currently, I'm pursuing in Bachelor of Computer Science Software Development in December 2021
+                               at the University of Sultan Zainal Abidin. My hobby is watching movie. Embarking on a cinematic 
+                               journey is not just a pastime for me— it's a passion. As an avid movie enthusiast, I find solace, 
+                               excitement, and inspiration in the art of storytelling through film. I am on a thrilling journey 
+                               to fulfill my dream career as a web programmer. Armed with a deep-seated passion for innovation 
+                               and problem-solving, I find joy in crafting digital landscapes that seamlessly blend creativity 
+                               and functionality. My motto is "Trust the Timing of Your Life."</p><br>
+                            
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onClick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onClick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>Computer</span><br>Ability to learn and operate various technology</li>
+                                    <li><span>Communication</span><br>Be able to give and receive different kind of information</li>
+                                    <li><span>Problem-Solving</span><br>Enable to determine the root of problem and quickly find an effective solution</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education" >
+                                <ul>
+                                    <li><span>2021 - Current</span><br>Studying at UniSZA</li>
+                                    <li><span>2019 - 2021</span><br>Studying at Pahang Matriculation</li>
+                                    <li><span>2015 - 2019</span><br>Studying at SMK Sultan Ahmad</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- -------- services ---------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Project</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>HTML</h2>
+                        <p>The common markup language used to produce and 
+                           design content on the World Wide Web is called HTML, 
+                           or HyperText Markup Language.</p>
+                        <a href="html.png">Click Here</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-crop"></i>
+                        <h2>JavaScript</h2>
+                        <p>JavaScript is a programming language that is adaptable 
+                           and at a high level, mainly used in web development.</p>
+                        <a href="javascript.png">Click Here</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-app-store"></i>
+                        <h2>CSS</h2>
+                        <p>A stylesheet language called CSS, or Cascading Style Sheets, 
+                           is used to specify how an HTML or XML page is presented.</p>
+                        <a href="css.png">Click Here</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -------- portfolio ---------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Achievement</h1>
+                <div class="work-list">
+                    <div class="work">
+                       <img src="social.png">
+                        <div class="layer">
+                            <h3>KTKN & Best Trenglish
+                                Parliamentary Camp</h3>
+                            <p>I joined the English Language Programme, named the 
+                                Best English Parliamentary Camp, in 2018 at SMK 
+                                Lembah Bidong.
+                                </p>
+                            <a href="KTKN.jpg"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="ui.png">
+                        <div class="layer">
+                            <h3>Chorasical Sketch Competition</h3>
+                            <p>I participated actively in the Chorasical Sketch 
+                                Competition in 2019 with my friends at SMK Belara.</p>
+                            <a href="Chorasical Sketch.jpg"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="apps.png">
+                        <div class="layer">
+                            <h3>WEBINAR Pengurusan Sukan</h3>
+                            <p>As a Multimedia committee member, I edited the 
+                                program's poster and shared it to other KMPh's student 
+                                through media social.</p>
+                            <a href="webinar.jpg"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/watch?v=0YFrGy_mzjY&t=1995s" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- -------- contact ---------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> 072928@putra.unisza.edu.my</p>
+                        <p><i class="fa-solid fa-square-phone"></i> 011-17809908</p>
+                        <div class="social-icons">
+                            <a href="https://instagram.com/nrilyaizzati?igshid=OGQ5ZDc2ODk2ZA=="><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://twitter.com/ilyaizzati_27"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.youtube.com/@nrilyaizzati"><i class="fa-brands fa-youtube"></i></a>
+                        </div>
+                        <a href="izzatiCV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © Ilya Izzati. Made with <i class="fa-solid fa-heart"></i> Kevin Easy Tutorials</p>
+            </div>
+        </div>
+        
+        <script>
+            
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            
+            function opentab(tabname) {
+                for(tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+        </script>
+        
+        <script>
+            
+            var sidemenu = document.getElementById("sidemenu");
+            
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbySU0pjb20NO7feYZrSRRwR85x5mpkSQcf6lbH56Ae4rsOVrW6z7xRMmsMXb5lodcea/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully!"
+                setTimeout(function() {
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+        </script>
+    </body>
+</html>
